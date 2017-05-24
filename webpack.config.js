@@ -8,7 +8,13 @@ module.rules : loaders. Specifies how file processed before combined into bundle
 resolve: Where Webpack should look for files referenced by an import or require() statement.
 
 --usually any npm package ending in -loader is for Webpack.
+
+
+-npm run compile > www/bundle.js.
+--TODO: clean this?
+--TODO: live recompile
 */
+console.log(__dirname)
 
 module.exports = {
   context: path.join(__dirname, 'src'),
@@ -16,7 +22,7 @@ module.exports = {
     './main.js',
   ],
   output: {
-    path: path.join(__dirname, 'www'),
+    path: path.join(__dirname, 'client'),
     filename: 'bundle.js'
   },
   module: {
