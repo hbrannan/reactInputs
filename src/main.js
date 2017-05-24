@@ -1,5 +1,9 @@
-var dontChaKnow = 'Hello Word';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Counter from './Counter';
 
-var showMeTheMoney = () => console.log(dontChaKnow);
+document.addEventListener('DOMContentLoaded', function (){
+  ReactDOM.render(React.createElement(Counter), document.getElementById('react-app-mount'));
+});
 
-showMeTheMoney();
+
