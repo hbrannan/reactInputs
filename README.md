@@ -1,1 +1,5 @@
-This is the generated readme.
+React Project
+
+
+Setup
+npm install
