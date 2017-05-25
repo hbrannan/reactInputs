@@ -13,8 +13,8 @@ resolve: Where Webpack should look for files referenced by an import or require(
 -npm run compile > www/bundle.js.
 --TODO: clean this?
 --TODO: live recompile
+--TODO: add linter to pipe
 */
-console.log(__dirname)
 
 module.exports = {
   context: path.join(__dirname, 'src'),

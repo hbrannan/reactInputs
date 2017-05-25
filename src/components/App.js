@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from './Form';
 
 class Counter extends React.Component {
   constructor () {
@@ -10,12 +11,7 @@ class Counter extends React.Component {
 
   render () {
     return (
-      <button
-        onClick={
-          () => this.setState({count: this.state.count +1})
-        }
-      > Count: {this.state.count}
-      </button>
+      <Form/>
     );
   }
 }
